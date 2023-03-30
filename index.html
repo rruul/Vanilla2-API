@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises del mundo</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="pag">
+           
+        <nav>
+            <aside id="busc" class="aside1">
+                <span class="contis">Contientes</span>
+                <span class="contientes" id="America">América</span>
+                <span class="contientes" id="Asia">Asia</span>
+                <span class="contientes" id="Africa">Africa</span>
+                <span class="contientes" id="Europa">Europa</span>
+                <span class="contientes" id="Oceania">Oceanía</span>
+            </aside>
+        </nav>
+        
+        <div class="arriba">    
+            <div class="busqueda">
+                <div class="menu" id="menu">
+                    <button class="fa-solid fa-bars btnmenu"  aria-controls="mobi" id="botoncerrar"></button>
+                </div>
+                <input type="search" placeholder="Buscar pais" id="buscador">
+            </div>
+            
+        </div>
+        <div class="contenido" id="contenido">
+            <h1>Países del mundo</h1>
+        </div>
+        <div class="letras" id="letras">
+            <button id="A" class="btn">A</button>
+            <button id="B" class="btn">B</button>
+            <button id="C" class="btn">C</button>
+            <button id="D" class="btn">D</button>
+            <button id="E" class="btn">E</button>
+            <button id="F" class="btn">F</button>
+            <button id="G" class="btn">G</button>
+            <button id="H" class="btn">H</button>
+            <button id="I" class="btn">I</button>
+            <button id="J" class="btn">J</button>
+            <button id="K" class="btn">K</button>
+            <button id="L" class="btn">L</button>
+            <button id="M" class="btn">M</button>
+            <button id="N" class="btn">N</button>
+            <button id="O" class="btn">O</button>
+            <button id="P" class="btn">P</button>
+            <button id="Q" class="btn">Q</button>
+            <button id="R" class="btn">R</button>
+            <button id="S" class="btn">S</button>
+            <button id="T" class="btn">T</button>
+            <button id="U" class="btn">U</button>
+            <button id="V" class="btn">V</button>
+            <button id="W" class="btn">W</button>
+            <button id="X" class="btn">X</button>
+            <button id="Y" class="btn">Y</button>
+            <button id="Z" class="btn">Z</button>
+        </div>
+        
+        <div class="paises" id="paises"></div>
+        <div class="modalcontenido" id="modalcontenido">
+            <div class="cerrar-modal modal2">
+                <button class="fa-solid fa-xmark cerrar" id="btncerrar"></button>
+                <div class="modal" id="modal"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <template id="pais">
+        <div class="pais">
+            <a>
+                <img src="" alt="" class="imgMuestra">
+                <div><span class="nombrePais"></span></div>
+            </a>
+        </div>
+    </template>
+    <template id="msPais">
+        <div class="msPais" id="msPais">
+            <img src="" alt="" class="flag">
+            </table>
+            <table class="tablaInfo">
+                <tr>
+                    <td>Nombre popular</td>
+                    <td class="nombrePopular"></td>
+                </tr>
+                <tr>
+                    <td>Nombre Oficial</td>
+                    <td>
+                        <p>
+                            <span>Español: </span>
+                            <span class="nombreOficialSpa"></span>
+                        </p>
+                        <p>
+                            <span>Oficial: </span>
+                            <span class="nombreOficial"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Capital</td>
+                    <td class="capital"></td>
+                </tr>
+                <tr>
+                    <td>Región</td>
+                    <td class="region"></td>
+                </tr>
+                <tr>
+                    <td>SubRegión</td>
+                    <td class="subreg"></td>
+                </tr>
+                <tr>
+                    <td>Abreviaturas según normas</td>
+                    <td>
+                    <p>
+                        <span> cca2:</span>
+                        <span class="cca2"></span>
+                    </p>
+                    <p>
+                        <span> cca3:</span>
+                        <span class="cca3"></span>
+                    </p>
+                    <p>
+                        <span> ccn3:</span>
+                        <span class="ccn3"></span>
+                    </p>
+                    <p>
+                        <span> cioc:</span>
+                        <span class="cioc"></span>
+                    </p>
+                    <p>
+                        <span> tld:</span>
+                        <span class="tld"></span>
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Población</td>
+                    <td class="Poblacion"></td>
+                </tr>
+                <tr>
+                    <td>Área (Km)</td>
+                    <td class="area"></td>
+                </tr>
+                <tr>
+                    <td>Latitud y longitud</td>
+                    <td>
+                        <p>
+                            <span> Lat:</span>
+                            <span class="lat"></span>
+                        </p>
+                        <p>
+                            <span> Long:</span>
+                            <span class="long"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Código de llamada</td>
+                    <td class="codigollamada"></td>
+                </tr>
+            </table>
+        </div>
+    </template>
+
+    <script src="../js/index.js"></script>
+    <script type="text/javascritp"></script>
+</body>
+</html>
